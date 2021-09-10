@@ -37,4 +37,13 @@ describe("UserSearch", () => {
 
     expect(screen.getByText("Alex20")).toBeInTheDocument();
   });
+
+  it("does not find and outputs name Alex and his age of 20 when button Find User is clicked", () => {
+    const searchInput: HTMLInputElement = screen.getAllByTestId("user_search-input")[0] as HTMLInputElement;
+    const findButton = screen.getByText("Find User");
+    fireEvent.change(searchInput, { target: { value: "Laura" } });
+    fireEvent.click(findButton);
+
+    expect(screen.queryByText("Laura")).not.toBeInTheDocument();
+  });
 });
