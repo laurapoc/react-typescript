@@ -20,7 +20,7 @@ const UserSearch: React.FC = () => {
   return (
     <>
       <h1>User Search:</h1>
-      <input value={name} onChange={(e) => setName(e.target.value)} />
+      <input data-testid="user_search-input" value={name} onChange={(e) => setName(e.target.value)} />
       <button onClick={onclick}>Find User</button>
       <div>
         {user && user.name}

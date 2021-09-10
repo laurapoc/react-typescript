@@ -31,7 +31,7 @@ export default class UserSearch extends Component<UserSearchProps> {
     const { name, user } = this.state;
     return (
       <>
-        <h1>User Search:</h1>
+        <h1>User Search from class based component:</h1>
         <input value={name} onChange={(e) => this.setState({ name: e.target.value })} />
         <button onClick={this.onClick}>Find User</button>
         <div>
