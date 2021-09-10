@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom";
 import Parent from "./props/Parent";
-import GuestList from "./state/GuestList";
+import GuestList from "./state/guestList/GuestList";
 
 const App = () => {
   return (
