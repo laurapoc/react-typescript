@@ -12,6 +12,11 @@ const GuestList: React.FC = () => {
   return (
     <div>
       <h1>Guest List:</h1>
+      <ul>
+        {guests.map((guest) => (
+          <li key={guest}>{guest}</li>
+        ))}
+      </ul>
       <input value={name} onChange={(e) => setName(e.target.value)} />
       <button onClick={onClick}>Add Guest</button>
     </div>
