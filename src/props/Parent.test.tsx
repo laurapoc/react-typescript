@@ -1,5 +1,6 @@
 import { render } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
+
 import Parent from "./Parent";
 
 describe("Parent", () => {
@@ -8,4 +9,10 @@ describe("Parent", () => {
 
     expect(getByText("red")).toBeInTheDocument();
   });
+
+  it('renders children props with the text Children', () => {
+    const { getByText } = render(<Parent />);
+
+    expect(getByText("Children")).toBeInTheDocument()
+  })
 });
