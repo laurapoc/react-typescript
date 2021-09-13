@@ -27,8 +27,8 @@ const UserSearch: React.FC = () => {
 
   return (
     <>
-      <h1>User Search:</h1>
-      <input ref={inputRef} value={name} onChange={(e) => setName(e.target.value)} />
+      <h1>User Search with focus:</h1>
+      <input data-testid="focused-input" ref={inputRef} value={name} onChange={(e) => setName(e.target.value)} />
       <button onClick={onclick}>Find User</button>
       <div>
         {user && user.name}
