@@ -3,8 +3,9 @@ import ReactDOM from "react-dom";
 import EventComponent from "./events/EventComponent";
 import Parent from "./props/Parent";
 import GuestList from "./state/guestList/GuestList";
-import UserSearch from "./state/userSearch/UserSearch";
+// import UserSearch from "./state/userSearch/UserSearch";
 import UserSearchClass from "./classes/UserSearchClass";
+import UserSearch from "./refs/UserSearch";
 
 const App = () => {
   return (
